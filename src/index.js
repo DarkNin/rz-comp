@@ -1,6 +1,5 @@
-import RZFormItem from "./components/form-comps/RZFormItem";
-import RZFormQueryBar from "./components/form-comps/RZFormQueryBar";
-import RZSideBar from "./components/side-bar/RZSideBar";
+import { RZFormItem, RZFormQueryBar } from './components/form-comps'
+import RZSideBar from "./components/side-bar";
 
 
 // 存储组件列表
@@ -23,9 +22,9 @@ if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue)
 }
 
-export default {
+export  {
   install,
   RZSideBar,
   RZFormQueryBar,
-  RZFormItem
+  RZFormItem,
 }

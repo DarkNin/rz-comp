@@ -7,11 +7,11 @@
         :data.sync="queryCompData">
     </rz-form-query-bar>
 
-    <rz-side-bar
+    <rz-sidebar
         class="side-bar-style"
         :list="sideBarItemList"
         :config="sideBarConfig">
-    </rz-side-bar>
+    </rz-sidebar>
 
     <rz-form-item
         class="form-style"
@@ -25,15 +25,15 @@
 
 <script>
   import RZFormQueryBar from "./components/form-comps/RZFormQueryBar";
-  import RZSideBar from "./components/side-bar/RZSideBar";
-  import RZFormItem from "./components/form-comps/RZFormItem";
+  // import RZSideBar from "./components/side-bar/RZSideBar";
+  // import RZFormItem from "./components/form-comps/RZFormItem";
 
   export default {
     name: 'app',
     components: {
       'rz-form-query-bar': RZFormQueryBar,
-      'rz-side-bar': RZSideBar,
-      'rz-form-item': RZFormItem
+      // 'rz-side-bar': RZSideBar,
+      // 'rz-form-item': RZFormItem
     },
     data() {
       return {
