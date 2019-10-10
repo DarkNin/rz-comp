@@ -1,17 +1,17 @@
 {
   "name": "rz-el-comp",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "private": false,
   "author": {
     "name": "DarkNin"
   },
   "license": "MIT",
-  "main": "lib/rz-comp.umd.min.js",
+  "main": "lib/rz-el-comp.umd.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "lib": "vue-cli-service build --target lib --name rz-el-comp --dest lib src/index.js"
+    "lib": "vue-cli-service build --target lib --name rz-el-comp --dest lib packages/index.js"
   },
   "dependencies": {
     "core-js": "^2.6.5",

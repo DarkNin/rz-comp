@@ -24,7 +24,7 @@
 </template>
 
 <script>
-  import RZFormQueryBar from "./components/form-comps/RZFormQueryBar";
+  import RZFormQueryBar from "../packages/components/form-comps/RZFormQueryBar";
   // import RZSideBar from "./components/side-bar/RZSideBar";
   // import RZFormItem from "./components/form-comps/RZFormItem";
 
