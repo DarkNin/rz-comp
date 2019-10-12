@@ -5,6 +5,7 @@
       :ref="config.refName"
       label-position="top"
       :size="config.size"
+      @submit.native.prevent
       :rules="rules">
     <el-form-item
         class="form-item-style"

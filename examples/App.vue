@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <rz-form-query-bar
+    <rz-query-bar
         class="query-style"
-        :query-comp-bar-config="queryConfig"
+        :config="queryConfig"
         :button-group="buttonGroup"
         :data.sync="queryCompData">
-    </rz-form-query-bar>
+    </rz-query-bar>
 
     <rz-sidebar
         class="side-bar-style"
@@ -24,14 +24,14 @@
 </template>
 
 <script>
-  import RZFormQueryBar from "../packages/components/form-comps/RZFormQueryBar";
+  //import RZFormQueryBar from "../packages/components/form-comps/RZFormQueryBar";
   // import RZSideBar from "./components/side-bar/RZSideBar";
   // import RZFormItem from "./components/form-comps/RZFormItem";
 
   export default {
     name: 'app',
     components: {
-      'rz-form-query-bar': RZFormQueryBar,
+     // 'rz-form-query-bar': RZFormQueryBar,
       // 'rz-side-bar': RZSideBar,
       // 'rz-form-item': RZFormItem
     },

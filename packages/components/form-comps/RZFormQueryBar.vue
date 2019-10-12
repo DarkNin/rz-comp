@@ -1,6 +1,6 @@
 <template>
   <div class="rz-form-query-bar">
-    <div v-for="(queryOption, key) in queryCompBarConfig"
+    <div v-for="(queryOption, key) in list"
          :key="'query-comp-bar-item-' + key"
          class="query-bar-item">
       <label
@@ -36,7 +36,7 @@
 
   export default {
     name: "RZFormQueryBar",
-    props: ['queryCompBarConfig', 'buttonGroup', 'data'],
+    props: ['list', 'buttonGroup', 'data'],
     components: {
       TextComp,
       DateComp,
@@ -81,10 +81,6 @@
 
   .query-bar-item, .query-bar-button {
     margin: 0 5px;
-  }
-
-  .text-comp-style {
-
   }
 
   .query-comp-label {

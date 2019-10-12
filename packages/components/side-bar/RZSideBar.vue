@@ -4,18 +4,10 @@
         class="side-bar-menu"
         :default-openeds="defaultOpenGroup"
         :collapse="config.collapse"
-        :default-active="config.defaultActive">
+        :default-active="config.defaultActive || true">
       <template v-for="(sideBarItem, sideBarKey) in list">
-        <el-menu-item
-            v-if="sideBarItem.isLeaf"
-            :key="'side-bar-item-' + sideBarKey"
-            :index="sideBarKey.toString()"
-            @click="sideBarItem.callback()">
-          <i :class="sideBarItem.icon"></i>
-          <span slot="title">{{sideBarItem.label}}</span>
-        </el-menu-item>
         <el-submenu
-            v-else
+            v-if="!sideBarItem.isLeaf"
             :key="'side-bar-item-' + sideBarKey"
             :index="sideBarKey.toString()">
           <template slot="title">
@@ -31,6 +23,14 @@
             <span slot="title">{{subMenuItem.label}}</span>
           </el-menu-item>
         </el-submenu>
+        <el-menu-item
+            v-else
+            :key="'side-bar-item-' + sideBarKey"
+            :index="sideBarKey.toString()"
+            @click="sideBarItem.callback()">
+          <i :class="sideBarItem.icon"></i>
+          <span slot="title">{{sideBarItem.label}}</span>
+        </el-menu-item>
       </template>
     </el-menu>
   </div>
